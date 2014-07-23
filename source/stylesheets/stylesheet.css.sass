@@ -1,0 +1,59 @@
+
+@import "compass/css3"
+@import "compass/utilities"
+
+body
+	background-color: #edf1f2
+	font-family: "Roboto"
+
+.navbar
+	border: none
+	background-color: #1c2b36
+	font-family: "Montserrat"
+	.nav.navbar-nav li
+		&.open
+			a
+				background-color: #4dbd74
+				color: white
+				&:hover
+					color: white
+		a
+			color: white
+			text-transform: uppercase
+			&:hover
+				color: #4dbd74
+		ul.dropdown-menu
+			font-family: "Roboto"
+			a
+				color: #000
+				text-transform: none
+				background: white
+				&:hover
+					color: #4dbd74
+
+	.nav.navbar-nav.navbar-right li a
+		color: #f75353
+		&:hover
+			color: lighten(#f75353, 10%)
+
+	@include border-radius(0)
+	.navbar-brand
+		background-color: #0f1922
+
+.table-bg
+	background: white
+	@include border-radius(4px)
+	.table-controls
+		padding: 10px
+		border-bottom: 1px solid #edf1f2
+
+#footer
+	position: fixed
+	bottom: 0
+	width: 100%
+	box-sizing: border-box
+	padding: 10px 15px
+	background-color: #cbd6d9
+	font-family: "Montserrat"
+	color: #1c2b36
+	text-transform: uppercase
