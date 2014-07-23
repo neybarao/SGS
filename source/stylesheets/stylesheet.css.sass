@@ -13,6 +13,57 @@ h1
 	color: #1c2b36
 	margin-top: 0
 
+
+// LOGIN
+body.login
+	background-color: #e7e7e6
+
+#login-box
+	width: 360px
+	height: 360px
+	background: white
+	@include border-radius(4px)
+	@include box-shadow(rgba(black, 0.15) 0 0 4px)
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -180px
+	margin-left: -180px
+	box-sizing: border-box
+	padding: 30px
+	text-align: center
+
+	.form-control
+		border: none
+		@include box-shadow(none)
+		@include border-radius(0)
+		border-bottom: 1px solid #e8e8e8
+		color: black
+		margin-bottom: 30px
+		&:focus
+			border-bottom: 3px solid #a0c908
+			color: #a0c908
+
+	.btn-default
+		border: none
+		background-color: #a0c908
+		color: white
+		text-transform: uppercase
+		&:hover
+			background-color: darken(#a0c908, 10%)
+
+	.logo-sgs-login
+		margin: 30px 0
+
+.logo-bb
+	position: absolute
+	bottom: 20px
+	right: 20px
+
+// END LOGIN
+
+
+// SISTEMA
 .navbar
 	border: none
 	background-color: #1c2b36
@@ -69,3 +120,5 @@ h1
 	font-family: "Montserrat"
 	color: #1c2b36
 	text-transform: uppercase
+
+//END SISTEMA

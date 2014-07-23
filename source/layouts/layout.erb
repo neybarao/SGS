@@ -15,6 +15,9 @@
 
 		<%= stylesheet_link_tag "normalize", "bootstrap/css/bootstrap.min", "font-awesome/css/font-awesome.min", "stylesheet", "slider/css/slider" %>
 		<%= javascript_include_tag  "jquery.min", "all", "/stylesheets/bootstrap/js/bootstrap.min", "slider/js/bootstrap-slider" %>
+		<!--[if lt IE 9]>
+		<%= javascript_include_tag  "dist/html5shiv.min" %>
+		<![endif]-->
 	</head>
 
 	<body class="<%= page_classes %>">

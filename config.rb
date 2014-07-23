@@ -82,3 +82,6 @@ end
 activate :livereload do |livereload|
   livereload.host = Socket.ip_address_list.detect{|intf| intf.ipv4_private?}.ip_address
 end
+
+page "/*", :layout => "login"
+page "/sistema/*", :layout => "layout"
