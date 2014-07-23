@@ -67,16 +67,16 @@ configure :build do
   activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 
-  require 'rubygems'
-  require 'middleman/rack'
-  require 'bootstrap-sass'
+  # require 'rubygems'
+  # require 'middleman/rack'
+  # require 'bootstrap-sass'
 
-  run Middleman.server
+  # run Middleman.server
 end
 
 activate :livereload do |livereload|
