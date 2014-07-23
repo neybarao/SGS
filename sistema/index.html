@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+		<!-- Use title if it's in the page YAML frontmatter -->
+		<title>Sistema de Gestão de Serviços</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<link href="../stylesheets/normalize-6197e73d.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/bootstrap/css/bootstrap.min-0033dd1f.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/font-awesome/css/font-awesome.min-a09c09d1.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/stylesheet-73c59d9e.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/slider/css/slider-1307bc62.css" rel="stylesheet" type="text/css" />
+		<script src="../javascripts/jquery.min-6fadd72b.js" type="text/javascript"></script><script src="../javascripts/all-81cc4941.js" type="text/javascript"></script><script src="../stylesheets/bootstrap/js/bootstrap.min-fc0b7643.js" type="text/javascript"></script><script src="../javascripts/slider/js/bootstrap-slider-bb8a40c6.js" type="text/javascript"></script>
+		<!--[if lt IE 9]>
+		<script src="../javascripts/dist/html5shiv.min-d6eed7e3.js" type="text/javascript"></script>
+		<![endif]-->
+	</head>
+
+	<body class="sistema sistema_index">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<span class="sr-only">Brand</span>
+						<img width="50" class="logo-sgs" src="../images/sgs-logo-f04ed15b.png" />
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#"><i class="fa fa-home"></i></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastros <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Cargo de coordenadores</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Cargos</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Comandos</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Equipamentos</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Materiais</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Perguntas</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Recursos humanos</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Serviços</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Movimentações <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Execução de Ordem de Serviço</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Filtros para seleção de OS</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Programação de OS</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Relatórios</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Transferência de OS</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gerenciais <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Consulta de OS no mapa</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Consulta de OS no Google Maps</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ajuda <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><i class="fa fa-power-off"></i> Sair</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+
+		<div class="container-fluid">
+	<h1>Controle de sinal das equipes de campo</h1>
+
+	<div class="table-bg">
+		<div class="table-controls">
+			<form class="form-inline" role="form">
+				<div class="form-group">
+	  			<label for="coordenador-v">Coordenador</label>
+	  			<select class="form-control" id="coordenador-v">
+					  <option>Coordenador 1</option>
+					  <option>Coordenador 2</option>
+					  <option>Coordenador 3</option>
+					  <option>Coordenador 4</option>
+					  <option>Coordenador 5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label>Atualização (min)</label>
+					<input type="text" class="slider" value="" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="2" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
+				</div>
+			</form>
+		</div>
+		<table class="table table-striped">
+			<thead>
+		  	<tr>
+		  		<th>Equipe</th>
+		  		<th>Últ. Sincronização</th>
+		  		<th>Situação</th>
+		  		<th>Bateria</th>
+		  		<th>Mapa</th>
+		  		<th>Programação</th>
+		  		<th>Monitoramento</th>
+		  		<th>Estatísticas</td>
+		  	</tr>
+		  </thead>
+		  <tbody>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  	<tr>
+		  		<td>AP-03</td>
+		  		<td>d h m Off</td>
+		  		<td><i class="fa fa-circle-o"></i></td>
+		  		<td>Bateria</td>
+		  		<td><a href="#"><i class="fa fa-globe fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-list-ol fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-eye fa-lg"></i></a></td>
+		  		<td><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i></a></td>
+		  	</tr>
+		  </tbody>
+		</table>
+	</div>
+
+</div><!-- .container-fluid -->
+
+
+
+		<footer>
+			<div id="footer">
+				Unidade
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+			$('.slider').slider('horizontal');
+		</script>
+	</body>
+</html>
