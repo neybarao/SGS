@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 
@@ -13,7 +13,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-		<link href="../stylesheets/normalize-6197e73d.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/bootstrap/css/bootstrap.min-0033dd1f.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/font-awesome/css/font-awesome.min-a09c09d1.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/stylesheet-73c59d9e.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/slider/css/slider-1307bc62.css" rel="stylesheet" type="text/css" />
+		<link href="../stylesheets/normalize-6197e73d.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/bootstrap/css/bootstrap.min-0033dd1f.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/font-awesome/css/font-awesome.min-a09c09d1.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/stylesheet-8e643510.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/slider/css/slider-1307bc62.css" rel="stylesheet" type="text/css" />
 		<script src="../javascripts/jquery.min-6fadd72b.js" type="text/javascript"></script><script src="../javascripts/all-81cc4941.js" type="text/javascript"></script><script src="../stylesheets/bootstrap/js/bootstrap.min-fc0b7643.js" type="text/javascript"></script><script src="../javascripts/slider/js/bootstrap-slider-bb8a40c6.js" type="text/javascript"></script>
 		<!--[if lt IE 9]>
 		<script src="../javascripts/dist/html5shiv.min-d6eed7e3.js" type="text/javascript"></script>
@@ -95,7 +95,7 @@
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"><i class="fa fa-power-off"></i> Sair</a></li>
+						<li><a href="/"><i class="fa fa-power-off"></i> Sair</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -119,6 +119,7 @@
 					</select>
 				</div>
 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<div class="form-group">
 					<label>Atualização (min)</label>
 					<input type="text" class="slider" value="" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="2" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show">
@@ -369,7 +370,23 @@
 
 		<footer>
 			<div id="footer">
-				Unidade
+				<form class="form-inline" role="form">
+					<div class="form-group">
+		  			<label for="unidade-s">Unidade</label>
+		  			<select class="form-control" id="unidade-s">
+						  <option>GESTÃO SISTEMAS</option>
+						  <option>GESTÃO RH</option>
+						  <option>GESTÃO RECLAMAÇÕES</option>
+						</select>
+					</div>
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>Usuário: basualdo - Denilson Basualdo</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>Sistema: SGS</span>
+
+					<img width="154" class="logo-bb-sistema" src="../images/bb-logo-889e3447.png" />
+				</form>
 			</div>
 		</footer>
 
