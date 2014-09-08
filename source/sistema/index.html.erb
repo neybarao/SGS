@@ -1428,6 +1428,745 @@ title: Sistema de Gestão de Serviços
 </div><!-- /.modal -->
 <!-- /END 15 RELAÇÃO DE EQUIPE COM RH E EQUIPAMENTO -->
 
+<!-- 16 CONSULTA DE OS NO MAPA -->
+<div class="modal fade" id="consulta_os_mapa">
+	<div class="modal-dialog modal-xg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Consulta de OS no mapa</h4>
+			</div>
+			<!-- MODAL CONTENT -->
+			<div class="modal-body">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default"><span class="fa fa-plus-circle"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-save"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-trash"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-refresh"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-print"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-external-link"></span></button>
+				</div>
+
+				<br>
+
+				<form role="form">
+					<h4>Filtros para Ordem de Serviços</h4>
+					<div class="divider"></div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<label for="exampleInput1">Data OS</label>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-1">a</div>
+
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<label for="exampleInput1">Data Programada</label>
+
+								<div class="row">
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-1">a</div>
+
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<label for="exampleInput1">Data Executado</label>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-1">a</div>
+
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<label for="exampleInput1">Serviço</label>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="email" class="form-control" id="exampleInputEmail1">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<label for="exampleInput1">Equipe</label>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<select class="form-control">
+												<option></option>
+												<option>opção 1</option>
+												<option>opção 2</option>
+												<option>opção 3</option>
+												<option>opção 4</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Setor/Rota</label>
+
+								<div class="row">
+									<div class="col-md-3">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-4">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Ciclo</label>
+								<div class="row">
+									<div class="col-md-3">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-4">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Classe Água</label>
+
+								<div class="row">
+									<div class="col-md-3">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-4">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Tipo Ligação</label>
+								<div class="row">
+									<div class="col-md-3">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-4">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Situação da Ligação</label>
+
+								<div class="row">
+									<div class="col-md-3">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-4">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Situação</label>
+								<select class="form-control">
+									<option></option>
+									<option>1</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Programador</label>
+								<select class="form-control">
+									<option></option>
+									<option>1</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<h4>Visualização</h4>
+					<div class="divider"></div>
+
+					<div class="row form-inline">
+						<div class="col-md-12">
+							<div class="checkbox"><label><input type="checkbox"> Ordens de Serviço</label></div>
+							&nbsp;&nbsp;
+							<div class="checkbox"><label><input type="checkbox"> Posicionamento de equipes</label></div>
+							&nbsp;&nbsp;
+							<div class="checkbox"><label><input type="checkbox"> Atualiza automático o mapa</label></div>
+							&nbsp;&nbsp;
+							<div class="form-group"><input type="text" class="form-control input-sm" value="3" size="2"></div>
+							Tempo de atualização (em minutos)
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<%= image_tag 'leg-amarelo.png', :width => '42' %>
+							Em execução &nbsp;
+							<%= image_tag 'leg-verde.png', :width => '42' %>
+							Executada &nbsp;
+							<%= image_tag 'leg-azul.png', :width => '42' %>
+							Pendente/programada &nbsp;
+							<%= image_tag 'leg-vermelho.png', :width => '42' %>
+							Cancelada &nbsp;
+							<%= image_tag 'leg-roxo.png', :width => '42' %>
+							Equipe &nbsp;
+							<%= image_tag 'leg-cinza.png', :width => '42' %>
+							Equipe Ociosa &nbsp;
+							<%= image_tag 'leg-preto.png', :width => '42' %>
+							Eq. Encerramento de exp.
+						</div>
+					</div>
+
+				</form>
+
+				<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14953.353555837872!2d-54.5917939!3d-20.4512902!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1410193385614" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+			</div>
+			<!-- /END MODAL CONTENT -->
+
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /END 16 CONSULTA DE OS NO MAPA -->
+
+<!-- 17 EXECUÇÃO DE ORDEM DE SERVIÇO -->
+<div class="modal fade" id="execucao_os">
+	<div class="modal-dialog modal-xg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Execução de ordem de serviço</h4>
+			</div>
+			<!-- MODAL CONTENT -->
+			<div class="modal-body">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default"><span class="fa fa-refresh"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-external-link"></span></button>
+				</div>
+
+				<br>
+
+				<form role="form">
+					<h4>Filtros para seleção de OS</h4>
+					<div class="divider"></div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Data OS</label>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-1 text-center">a</div>
+
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label for="exampleInput1">Data Programada</label>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-1 text-center">a</div>
+
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Data Execução</label>
+								<div class="row">
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-1 text-center">a</div>
+
+									<div class="col-md-5">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label for="exampleInput1">Programador</label>
+								<select class="form-control">
+									<option></option>
+									<option>1</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Equipe</label>
+								<select class="form-control">
+									<option></option>
+									<option>1</option>
+								</select>
+							</div>
+
+							<div class="col-md-6">
+								<label for="exampleInput1">Tipo Equipe</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Serviço Solicitado</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label for="exampleInput1">Serviço Realizado</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Cliente</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label for="exampleInput1">Setor / Rota</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1" disabled>
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1" disabled>
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Classe Esgoto</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label for="exampleInput1">Classe Água</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Tipo Ligação</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label for="exampleInput1">Situação Ligação</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="exampleInput1">Ciclo</label>
+								<div class="row">
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="exampleInputEmail1">
+									</div>
+									<div class="col-md-3">
+										<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+										<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<label>&nbsp</label>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Notificados
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-12 form-inline">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Atualiza automático
+										&nbsp;&nbsp;
+									</label>
+								</div>
+
+								<div class="form-group">
+									 <input type="email" class="form-control" size="3" value="3"> Tempo de atualização (em minutos)
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="greyborder">
+						<h4>Resultado da Pesquisa <span>Quantidade Existente: 3</span></h4>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th class="text-center">Status</th>
+									<th class="text-center">OS</th>
+									<th class="text-center">Localização</th>
+									<th class="text-center">Cliente</th>
+									<th class="text-center">Endereço</th>
+									<th class="text-center">Serv.Sol.</th>
+									<th class="text-center">Serv.Exec.</th>
+									<th class="text-center">Equipe</th>
+									<th class="text-center">Dt e Hora Conclusão</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								  <td class="text-center"><%= image_tag 'ic_cinza.png', :width => '26' %></th>
+									<td class="text-center">33769170</th>
+									<td class="text-center">17.000.39.398.0138.0</th>
+									<td class="text-center">MARCOS NERES GARCIA</th>
+									<td class="text-center">RUA PARACATU</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">ST 123</td>
+									<td class="text-center"> </td>
+								</tr>
+								<tr>
+								  <td class="text-center"><%= image_tag 'ic_amarelo.png', :width => '26' %></th>
+									<td class="text-center">33769170</th>
+									<td class="text-center">17.000.39.398.0138.0</th>
+									<td class="text-center">MARCOS NERES GARCIA</th>
+									<td class="text-center">RUA PARACATU</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">ST 123</td>
+									<td class="text-center"> </td>
+								</tr>
+								<tr>
+								  <td class="text-center"><%= image_tag 'ic_azul.png', :width => '26' %></th>
+									<td class="text-center">33769170</th>
+									<td class="text-center">17.000.39.398.0138.0</th>
+									<td class="text-center">MARCOS NERES GARCIA</th>
+									<td class="text-center">RUA PARACATU</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">ST 123</td>
+									<td class="text-center"> </td>
+								</tr>
+								<tr>
+								  <td class="text-center"><%= image_tag 'ic_verde.png', :width => '26' %></th>
+									<td class="text-center">33769170</th>
+									<td class="text-center">17.000.39.398.0138.0</th>
+									<td class="text-center">MARCOS NERES GARCIA</th>
+									<td class="text-center">RUA PARACATU</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">ST 123</td>
+									<td class="text-center"> </td>
+								</tr>
+								<tr>
+								  <td class="text-center"><%= image_tag 'ic_vermelho.png', :width => '26' %></th>
+									<td class="text-center">33769170</th>
+									<td class="text-center">17.000.39.398.0138.0</th>
+									<td class="text-center">MARCOS NERES GARCIA</th>
+									<td class="text-center">RUA PARACATU</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">98237</th>
+									<td class="text-center">ST 123</td>
+									<td class="text-center"> </td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="text-center">
+							<ul class="pagination">
+								<li class="disabled"><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<%= image_tag 'leg-cinza2.png', :width => '42' %>
+							Notificado &nbsp;
+							<%= image_tag 'leg-amarelo.png', :width => '42' %>
+							Em execução &nbsp;
+							<%= image_tag 'leg-verde.png', :width => '42' %>
+							Executada &nbsp;
+							<%= image_tag 'leg-azul.png', :width => '42' %>
+							Pendente/programada &nbsp;
+							<%= image_tag 'leg-vermelho.png', :width => '42' %>
+							Cancelada
+						</div>
+					</div>
+
+				</form>
+			</div>
+			<!-- /END MODAL CONTENT -->
+
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /END 16 CONSULTA DE OS NO MAPA -->
 
 
 
