@@ -75,13 +75,11 @@
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="#execucao_os" data-toggle="modal">Execução de Ordem de Serviço</a></li>
 								<li class="divider"></li>
-								<li><a href="#" data-toggle="modal">Filtros para seleção de OS</a></li>
+								<li><a href="#programacao_os" data-toggle="modal">Programação de OS</a></li>
 								<li class="divider"></li>
-								<li><a href="#" data-toggle="modal">Programação de OS</a></li>
+								<li><a href="#relatorios_os" data-toggle="modal">Relatórios</a></li>
 								<li class="divider"></li>
-								<li><a href="#" data-toggle="modal">Relatórios</a></li>
-								<li class="divider"></li>
-								<li><a href="#" data-toggle="modal">Transferência de OS</a></li>
+								<li><a href="#transferencia_os" data-toggle="modal">Transferência de OS</a></li>
 							</ul>
 						</li>
 
@@ -1849,7 +1847,7 @@
 </div><!-- /.modal -->
 <!-- /END 16 CONSULTA DE OS NO MAPA -->
 
-<!-- 17 EXECUÇÃO DE ORDEM DE SERVIÇO -->
+<!-- 17/18 EXECUÇÃO DE ORDEM DE SERVIÇO -->
 <div class="modal fade" id="execucao_os">
 	<div class="modal-dialog modal-xg">
 		<div class="modal-content">
@@ -2169,7 +2167,7 @@
 					</div>
 
 					<div class="greyborder">
-						<h4>Resultado da Pesquisa <span>Quantidade Existente: 3</span></h4>
+						<h5 class="text-center">Resultado da Pesquisa <span>Quantidade Existente: 3</span></h5>
 						<table class="table table-striped">
 							<thead>
 								<tr>
@@ -2280,10 +2278,700 @@
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<!-- /END 16 CONSULTA DE OS NO MAPA -->
+<!-- /END 17/18 EXECUÇÃO DE ORDEM DE SERVIÇO -->
+
+<!-- 19 PROGRAMAÇÃO OS -->
+<div class="modal fade" id="programacao_os">
+	<div class="modal-dialog modal-xg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Programação de OS</h4>
+			</div>
+			<!-- MODAL CONTENT -->
+			<div class="modal-body">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default"><span class="fa fa-save"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-trash"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-refresh"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-external-link"></span></button>
+				</div>
+
+				<br>
+
+				<form role="form">
+					<h4>Dados do lote</h4>
+					<div class="divider"></div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<label for="exampleInput1">Equipe</label>
+							<select class="form-control">
+								<option></option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+
+						<div class="col-md-4">
+							<label for="exampleInput1"><span class="red">*</span> Data Programação</label>
+							<div class="input-group">
+								<input type="text" class="form-control">
+								<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<label for="exampleInput1">Programador</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" value="basualdo">
+						</div>
+
+						<div class="col-md-12"><span class="red">* campos com preenchimento obrigatório</span></div>
+					</div>
+					<br>
+
+					<h4>Dados para pesquisa</h4>
+					<div class="divider"></div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-6">
+
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Tipo Equipe</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Cliente</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label>Setor/Rota</label>
+
+										<div class="greyborder">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Setor</th>
+														<th>Rota</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>POSSÍVEL VALOR</td>
+														<td>POSSÍVEL VALOR</td>
+													</tr>
+													<tr>
+														<td>POSSÍVEL VALOR</td>
+														<td>POSSÍVEL VALOR</td>
+													</tr>
+													<tr>
+														<td>POSSÍVEL VALOR</td>
+														<td>POSSÍVEL VALOR</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Ciclo</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="exampleInput1">Data Emissão</label>
+									</div>
+									<div class="col-md-4">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-1">a</div>
+
+									<div class="col-md-4">
+										<div class="input-group">
+											<input type="text" class="form-control">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<button type="submit" class="btn btn-default"><i class="fa fa-search"></i> Pesquisar</button>
+									</div>
+								</div>
+
+							</div>
 
 
+							<div class="col-md-6">
 
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Serviço</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Setor</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Classe esgoto</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Classe Água</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Tipo Ligação</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Situação da Ligação</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<label for="inputEmail3">Grupo Serviço</label>
+									</div>
+									<div class="col-md-4">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-5">
+										<input type="email" class="form-control" id="inputEmail3">
+									</div>
+									<div class="col-md-3">
+										 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+										 <button type="submit" class="btn btn-default"><i class="fa fa-close"></i></button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<h4>Resultados da pesquisa <i class="fa fa-expand"></i></h4>
+					<div class="divider"></div>
+
+					<h4>OS Selecionados <i class="fa fa-expand"></i></h4>
+					<div class="divider"></div>
+
+
+					<div class="greyborder">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Excluir</th>
+									<th class="text-center">Ordem</th>
+									<th class="text-center">Ordenamento</th>
+									<th class="text-center">OS</th>
+									<th class="text-center">Matrícula</th>
+									<th class="text-center">Emissão</th>
+									<th class="text-center">Localização</th>
+									<th class="text-center">Setor/Rota/Seqüência</th>
+									<th class="text-center">Serviço</th>
+									<th class="text-center">Dt. Previsão</th>
+									<th class="text-center">Dias Atraso</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								  <td>
+								  	<div class="checkbox">
+											<label><input type="checkbox"> Todos</label>
+										</div>
+
+									</th>
+									<td class="text-center"></th>
+									<td class="text-center"></th>
+									<td class="text-center"></th>
+									<td class="text-center"></th>
+									<td class="text-center"></th>
+									<td class="text-center"></th>
+									<td class="text-center"></td>
+									<td class="text-center"></td>
+									<td class="text-center"></td>
+									<td class="text-center"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</form>
+			</div>
+			<!-- /END MODAL CONTENT -->
+
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /END 19 PROGRAMAÇÃO OS -->
+
+<!-- 20 RELATÓRIOS -->
+<div class="modal fade" id="relatorios_os">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Relatórios</h4>
+			</div>
+			<!-- MODAL CONTENT -->
+			<div class="modal-body">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default"><span class="fa fa-refresh"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-print"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-external-link"></span></button>
+				</div>
+
+				<br><br>
+
+				<form role="form">
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-12">
+								<label for="exampleInput1">Data OS</label>
+							</div>
+							<div class="col-md-5">
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+								</div>
+							</div>
+
+							<div class="col-md-1">a</div>
+
+							<div class="col-md-5">
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-md-12">
+								<label for="exampleInput1">Data Programada</label>
+							</div>
+							<div class="col-md-5">
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+								</div>
+							</div>
+
+							<div class="col-md-1">a</div>
+
+							<div class="col-md-5">
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-md-12">
+								<label for="exampleInput1">Data Execução</label>
+							</div>
+							<div class="col-md-5">
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+								</div>
+							</div>
+
+							<div class="col-md-1">a</div>
+
+							<div class="col-md-5">
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<br>
+						<div class="form-group">
+							<label>Programador</label>
+							<select class="form-control">
+								<option></option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label>Equipe</label>
+							<select class="form-control">
+								<option></option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12"><label for="exampleInput3">Tipo Equipe</label></div>
+							<div class="col-md-4"><input type="text" class="form-control"></div>
+							<div class="col-md-5"><input type="text" class="form-control"></div>
+							<div class="col-md-3">
+								<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+								<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+							</div>
+						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-md-12"><label for="exampleInput3">Serviço Solicitado</label></div>
+							<div class="col-md-4"><input type="text" class="form-control"></div>
+							<div class="col-md-5"><input type="text" class="form-control"></div>
+							<div class="col-md-3">
+								<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+								<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+							</div>
+						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-md-12"><label for="exampleInput3">Serviço Realizado</label></div>
+							<div class="col-md-4"><input type="text" class="form-control"></div>
+							<div class="col-md-5"><input type="text" class="form-control"></div>
+							<div class="col-md-3">
+								<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+								<button type="button" class="btn btn-default"><span class="fa fa-close"></span></button>
+							</div>
+						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-md-12"><label for="exampleInput3"><span class="red">*</span> Tipo Relatório</label></div>
+							<div class="col-md-4">
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										Analítico
+									</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										Sintético
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<br>
+						<div class="form-group">
+							<label><span class="red">*</span> Relatório</label>
+							<select class="form-control">
+								<option></option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label>Flag</label>
+							<select class="form-control">
+								<option></option>
+							</select>
+						</div>
+					</div>
+
+				</form>
+				<span class="red">* campos com preenchimento obrigatório</span>
+			</div>
+			<!-- /END MODAL CONTENT -->
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /END 20 RELATÓRIOS -->
+
+
+<!-- 21 TRANSFERÊNCIA DE OS -->
+<div class="modal fade" id="transferencia_os">
+	<div class="modal-dialog modal-xg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Transferência de OS</h4>
+			</div>
+			<!-- MODAL CONTENT -->
+			<div class="modal-body">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default"><span class="fa fa-save"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-refresh"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+					<button type="button" class="btn btn-default"><span class="fa fa-external-link"></span></button>
+				</div>
+
+				<br><br>
+
+				<div class="greyborder">
+					<h5 class="text-center">
+						Equipe A
+						<button type="submit" class="btn btn-default"><i class="fa fa-external-link"></i></button>
+					</h5>
+
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th colspan="7">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-3 control-label text-right"><span class="red">*</span> Equipe A</label>
+										<div class="col-sm-4">
+											<select class="form-control">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+								</th>
+								<th colspan="6" class="text-right">Quantidade de registros: 0</th>
+							</tr>
+							<tr>
+								<th>
+									<label>
+										<input type="checkbox"> Todos
+									</label>
+								</th>
+								<th>Transferir</th>
+								<th>Ordem</th>
+								<th>OS</th>
+								<th>Matrícula</th>
+								<th>Emissão</th>
+								<th>Localização</th>
+								<th>Setor/Rota/Seqüência</th>
+								<th>Serviço</th>
+								<th>Dt. Previsão</th>
+								<th>Dias de Atraso</th>
+								<th>Dt. Programação</th>
+								<th>Cliente</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="text-center">
+						<button class="btn btn-default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-down"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+					</div>
+				</div>
+
+				<br>
+				<div class="greyborder">
+					<h5 class="text-center">
+						Equipe B
+						<button type="submit" class="btn btn-default"><i class="fa fa-external-link"></i></button>
+					</h5>
+
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th colspan="7">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-3 control-label text-right"><span class="red">*</span> Equipe B</label>
+										<div class="col-sm-4">
+											<select class="form-control">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+								</th>
+								<th colspan="6" class="text-right">Quantidade de registros: 0</th>
+							</tr>
+							<tr>
+								<th>Remover</th>
+								<th>Ordem</th>
+								<th>Ordenamento</th>
+								<th>OS</th>
+								<th>Matrícula</th>
+								<th>Emissão</th>
+								<th>Localização</th>
+								<th>Setor/Rota/Seqüência</th>
+								<th>Serviço</th>
+								<th>Dt. Previsão</th>
+								<th>Dias de Atraso</th>
+								<th>Dt. Programação</th>
+								<th>Cliente</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- /END MODAL CONTENT -->
+
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /END 21 TRANSFERÊNCIA DE OS -->
 
 
 
