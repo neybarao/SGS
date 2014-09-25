@@ -1,4 +1,3 @@
-
 @import "compass/css3"
 @import "compass/utilities"
 
@@ -97,6 +96,78 @@ body.login
 	@include border-radius(0)
 	.navbar-brand
 		background-color: #0f1922
+
+// ZK MENU
+.z-menubar.z-menubar-horizontal
+	border: none
+	background-color: #1c2b36
+	font-family: "Montserrat"
+	.z-menuseparator
+		display: list-item
+		height: 1px
+		margin: 5px 0
+		overflow: hidden
+		background-color: #e5e5e5
+	> ul
+		box-sizing: border-box
+		list-style: none
+		margin: 0
+		padding: 0
+		float: left
+		margin-left: 10px
+	> ul > li
+		float: left
+		display: block
+		box-sizing: border-box
+		position: relative
+		.z-menu-text::after
+			content: " \2192"
+			color: #999
+		a
+			box-sizing: border-box
+			padding-top: 15px
+			padding-bottom: 15px
+			position: relative
+			padding: 15px 15px
+			line-height: 20px
+			display: block
+			color: white
+			text-transform: uppercase
+			&:hover
+				color: #4dbd74
+				text-decoration: none
+		.z-menupopup
+			background-color: white
+			position: absolute
+			font-family: "Roboto"
+			.z-focus-a
+				display: none
+				position: relative
+			> ul
+				list-style: none
+				min-width: 160px
+				padding: 0
+				box-sizing: border-box
+				padding: 5px 0
+				border: 1px solid #ccc
+				position: relative
+				li
+					padding: 0
+				a
+					line-height: 26px
+					text-transform: none
+					color: black
+					margin: 0
+					padding: 5px 20px
+					&:hover
+						color: #4dbd74
+
+	.nav.navbar-nav.navbar-right li a
+		color: #f75353
+		&:hover
+			color: lighten(#f75353, 10%)
+// END ZK MENU
+
 
 .table-bg
 	background: white
