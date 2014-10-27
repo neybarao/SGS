@@ -98,6 +98,10 @@ body.login
 		background-color: #0f1922
 
 // ZK MENU
+.z-menubar
+	padding: 0
+.z-menu-text:after
+	content: none !important
 .z-menubar.z-menubar-horizontal
 	border: none
 	background-color: #1c2b36
@@ -230,6 +234,41 @@ body.login
 @media (min-width: 992px)
 	.modal-xg
 		width: 97%
+
+
+.navbar
+	-moz-border-radius: 0 !important
+	-webkit-border-radius: 0 !important
+	border-radius: 0 !important
+
+.z-menubar
+	padding: 0
+
+.z-menu-text:hover 
+	color: #4dbd74
+	text-shadow: none
+
+.z-menu-text:after
+	content: none !important
+
+.z-menu-content:hover,
+.z-menuitem-content:hover 
+	background: none
+	border: none
+	text-shadow: none
+
+.z-menuitem-content .z-menuitem-text,
+.z-menu-content .z-menu-text,
+.z-menu-content:hover .z-menu-text 
+	font-size: 14px
+	text-shadow: none
+
+.z-icon-caret,
+.z-icon-caret-down 
+	color: white
+	position: relative
+	margin-top: -2px
+	margin-left: 8px
 
 
 //END SISTEMA
