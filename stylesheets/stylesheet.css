@@ -119,18 +119,26 @@ body.login {
     background-color: #0f1922; }
 
 /* line 101, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-menubar {
+  padding: 0; }
+
+/* line 103, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-menu-text:after {
+  content: none !important; }
+
+/* line 105, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .z-menubar.z-menubar-horizontal {
   border: none;
   background-color: #1c2b36;
   font-family: "Montserrat"; }
-  /* line 105, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 109, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .z-menubar.z-menubar-horizontal .z-menuseparator {
     display: list-item;
     height: 1px;
     margin: 5px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
-  /* line 111, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 115, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .z-menubar.z-menubar-horizontal > ul {
     box-sizing: border-box;
     list-style: none;
@@ -138,17 +146,17 @@ body.login {
     padding: 0;
     float: left;
     margin-left: 10px; }
-  /* line 118, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 122, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .z-menubar.z-menubar-horizontal > ul > li {
     float: left;
     display: block;
     box-sizing: border-box;
     position: relative; }
-    /* line 123, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+    /* line 127, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
     .z-menubar.z-menubar-horizontal > ul > li .z-menu-text::after {
       content: " \2192";
       color: #999999; }
-    /* line 126, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+    /* line 130, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
     .z-menubar.z-menubar-horizontal > ul > li a {
       box-sizing: border-box;
       padding-top: 15px;
@@ -159,20 +167,20 @@ body.login {
       display: block;
       color: white;
       text-transform: uppercase; }
-      /* line 136, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+      /* line 140, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
       .z-menubar.z-menubar-horizontal > ul > li a:hover {
         color: #4dbd74;
         text-decoration: none; }
-    /* line 139, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+    /* line 143, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
     .z-menubar.z-menubar-horizontal > ul > li .z-menupopup {
       background-color: white;
       position: absolute;
       font-family: "Roboto"; }
-      /* line 143, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+      /* line 147, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
       .z-menubar.z-menubar-horizontal > ul > li .z-menupopup .z-focus-a {
         display: none;
         position: relative; }
-      /* line 146, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+      /* line 150, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
       .z-menubar.z-menubar-horizontal > ul > li .z-menupopup > ul {
         list-style: none;
         min-width: 160px;
@@ -181,27 +189,27 @@ body.login {
         padding: 5px 0;
         border: 1px solid #cccccc;
         position: relative; }
-        /* line 154, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+        /* line 158, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
         .z-menubar.z-menubar-horizontal > ul > li .z-menupopup > ul li {
           padding: 0; }
-        /* line 156, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+        /* line 160, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
         .z-menubar.z-menubar-horizontal > ul > li .z-menupopup > ul a {
           line-height: 26px;
           text-transform: none;
           color: black;
           margin: 0;
           padding: 5px 20px; }
-          /* line 162, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+          /* line 166, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
           .z-menubar.z-menubar-horizontal > ul > li .z-menupopup > ul a:hover {
             color: #4dbd74; }
-  /* line 165, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 169, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .z-menubar.z-menubar-horizontal .nav.navbar-nav.navbar-right li a {
     color: #f75353; }
-    /* line 167, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+    /* line 171, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
     .z-menubar.z-menubar-horizontal .nav.navbar-nav.navbar-right li a:hover {
       color: #f98484; }
 
-/* line 172, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 176, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .table-bg {
   background: white;
   -webkit-border-radius: 4px;
@@ -209,20 +217,20 @@ body.login {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px; }
-  /* line 175, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 179, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .table-bg .table-controls {
     padding: 10px;
     border-bottom: 1px solid #edf1f2; }
 
-/* line 179, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 183, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .fa-circle {
   color: #4dbd74; }
 
-/* line 181, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 185, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .fa-circle-o {
   color: #e24a4a; }
 
-/* line 184, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 188, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 #footer {
   position: fixed;
   bottom: 0;
@@ -234,17 +242,17 @@ body.login {
   font-size: 12px;
   color: #1c2b36;
   text-transform: uppercase; }
-  /* line 196, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 200, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   #footer .logo-bb-sistema {
     position: absolute;
     right: 20px;
     top: 5px; }
 
-/* line 201, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 205, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .red {
   color: #e24a4a; }
 
-/* line 204, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 208, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .greyborder {
   border: 1px solid #dddddd;
   padding: 10px;
@@ -253,32 +261,72 @@ body.login {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px; }
-  /* line 208, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 212, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .greyborder h5 span {
     font-weight: normal; }
-  /* line 210, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 214, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .greyborder table {
     margin-bottom: 10px; }
-  /* line 212, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 216, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .greyborder .pagination {
     margin: 0; }
 
-/* line 216, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 220, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .table th, .table th label {
   color: #5a6a7f;
   font-weight: 400 !important; }
 
-/* line 222, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 226, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .modal-body .btn-group .fa {
   color: #4dbd74; }
 
-/* line 225, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+/* line 229, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
 .divider {
   border-bottom: 1px solid #dddddd;
   margin-top: 10px;
   margin-bottom: 10px; }
 
 @media (min-width: 992px) {
-  /* line 231, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+  /* line 235, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
   .modal-xg {
     width: 97%; } }
+/* line 239, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.navbar {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important; }
+
+/* line 244, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-menubar {
+  padding: 0; }
+
+/* line 247, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-menu-text:hover {
+  color: #4dbd74;
+  text-shadow: none; }
+
+/* line 251, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-menu-text:after {
+  content: none !important; }
+
+/* line 254, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-menu-content:hover,
+.z-menuitem-content:hover {
+  background: none;
+  border: none;
+  text-shadow: none; }
+
+/* line 260, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-menuitem-content .z-menuitem-text,
+.z-menu-content .z-menu-text,
+.z-menu-content:hover .z-menu-text {
+  font-size: 14px;
+  text-shadow: none; }
+
+/* line 266, /Users/neyricardo/Sites/SGS/source/stylesheets/stylesheet.css.sass */
+.z-icon-caret,
+.z-icon-caret-down {
+  color: white;
+  position: relative;
+  margin-top: -2px;
+  margin-left: 8px; }
